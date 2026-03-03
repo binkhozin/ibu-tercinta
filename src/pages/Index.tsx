@@ -106,7 +106,7 @@ const Index = () => {
 
         <div className="relative z-10 max-w-lg mx-auto">
           {/* Bismillah */}
-          <p className="animate-fade-in-up text-lg md:text-xl text-sage-dark/70 mb-6 tracking-wide">
+          <p className="animate-fade-in-up text-lg md:text-xl text-sage-dark mb-6 tracking-wide">
             بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
           </p>
 
@@ -124,9 +124,9 @@ const Index = () => {
 
           {/* Decorative divider */}
           <div className="animate-fade-in-up-delay-2 flex items-center justify-center gap-3 mb-10">
-            <span className="h-px w-12 bg-gold/40" />
-            <span className="text-gold text-sm">✦</span>
-            <span className="h-px w-12 bg-gold/40" />
+            <span className="h-px w-12 bg-accent/40" />
+            <span className="text-accent text-sm">✦</span>
+            <span className="h-px w-12 bg-accent/40" />
           </div>
 
           {/* CTA Button */}
@@ -136,14 +136,14 @@ const Index = () => {
             className={`
               animate-fade-in-up-delay-3
               gold-shimmer animate-pulse-gold
-              text-white font-display font-semibold
+              font-display font-semibold
               text-base sm:text-lg
               px-8 py-4 rounded-full
               shadow-lg hover:shadow-xl
               transform hover:scale-105 active:scale-95
-              transition-all duration-300 ease-out
+              transition-transform duration-300 ease-out
               disabled:opacity-60 disabled:cursor-default disabled:hover:scale-100
-              focus:outline-none focus:ring-2 focus:ring-gold/50 focus:ring-offset-2 focus:ring-offset-background
+              focus:outline-none focus:ring-2 focus:ring-accent/50 focus:ring-offset-2 focus:ring-offset-background
             `}
           >
             ✉️ Sentuh untuk Buka Pesan
