@@ -96,8 +96,7 @@ const Index = () => {
 
       {/* Hidden audio element for background music */}
       <audio ref={audioRef} loop preload="none">
-        {/* Ganti src di bawah ini dengan link MP3 instrumen selawat */}
-        <source src="" type="audio/mpeg" />
+        <source src="/audio/Ummi_Haddad_Alwi.mp3" type="audio/mpeg" />
       </audio>
 
       {/* ===== HERO SECTION ===== */}
