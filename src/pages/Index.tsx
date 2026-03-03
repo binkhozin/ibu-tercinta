@@ -81,14 +81,14 @@ const Index = () => {
   // Intersection observer for fade-in on scroll
   const [cardInView, setCardInView] = useState(false);
   useEffect(() => {
-    if (!messageRef.current) return;
+    if (!messageVisible || !messageRef.current) return;
     const observer = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) setCardInView(true); },
-      { threshold: 0.2 }
+      { threshold: 0.15 }
     );
     observer.observe(messageRef.current);
     return () => observer.disconnect();
-  }, []);
+  }, [messageVisible]);
 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
