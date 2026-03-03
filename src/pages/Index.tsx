@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect, useCallback } from "react";
+import fotoIbu from "@/assets/foto-ibu.png";
 
 const PETALS = ['🌸', '🌺', '✿', '❀', '🌷'];
 
@@ -179,8 +180,8 @@ const Index = () => {
             <div className="flex justify-center -mt-16 sm:-mt-20 mb-6">
               <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-[3px] border-gold/50 shadow-lg overflow-hidden bg-sage-light flex items-center justify-center animate-float">
                 <img
-                  src="/placeholder.svg"
-                  alt="Foto keluarga"
+                  src={fotoIbu}
+                  alt="Foto Ibu di Masjid Nabawi"
                   className="w-full h-full object-cover"
                 />
               </div>
